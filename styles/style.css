@@ -1,8 +1,151 @@
-/*
-Colors:
+:root {
+  --Text: #1a1a1a;
+  --Green: #00b172;
+  --White: #fff;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+.nav-bar {
+  background-color: var(--White);
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-*/
+.nav-bar img {
+  height: 40px;
+  margin-left: 10px;
+}
+
+.lists {
+  list-style: none;
+  display: flex;
+}
+
+.lists a {
+  text-decoration: none;
+  color: var(--Text);
+  margin-right: 30px;
+}
+
+.background-image {
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  flex-direction: column;
+}
+
+.header-text h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.header-text p {
+  font-size: 35px;
+  text-align: center;
+}
+
+.content-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--Text);
+}
+
+.separator {
+  width: 200px;
+  border-bottom: 1px solid var(--Green);
+  margin: 2px auto;
+}
+
+.content-family {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-family div {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.content-family img {
+  max-width: 50%;
+}
+
+.content-family h3 {
+  margin-top: 10px;
+  color: var(--Green);
+}
+
+.content-family div {
+  margin-top: 10px;
+  color: var(--Text);
+  font-size: 16px;
+}
+
+.green-background {
+  width: 100%;
+  padding: 20px;
+  background-color: #00b172;
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.green-background section {
+  padding: 40px;
+  color: var(--White);
+  margin: 20px, 20px;
+}
+
+.green-background text div {
+  margin: 60px;
+  width: 60px;
+  position: relative;
+  flex-grow: 3;
+  flex-basis: auto;
+
+
+}
+
+.green-background text h3 {
+  margin-top: 10px;
+}
+
+.green-background text p {
+  margin-bottom: 10px;
+}
+
+.green-background logo{
+  max-width: 10px;
+  max-height: 10px;
+  position: absolute;
+  flex-grow: 1;
+  flex-basis: auto;
+
+}
+
+  .green-background kanye-pic {
+  max-width: 60px;
+  max-height: 60px;
+  position: relative;
+  flex-grow: 2;
+  flex-basis: auto;
+
+}
